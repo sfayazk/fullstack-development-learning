@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Composition</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      .grid-container {
+        height: 748px;
+        width: 748px;
+        background-color: #000;
+        display: grid;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 22px;
+        gap: 9px;
+      }
+
+      .grid-items{
+        background-color: #F0F1EC;
+      }
+      .i1 {
+        background-color: #e72f24;
+      }
+      .i2 {
+        grid-column: span 3;
+      }
+      .i3 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+      .i4 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      .i5 {
+        background-color: #004592;
+        border-bottom: 10px solid black;
+      }
+      .i6 {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+      .i8 {
+        background-color: #f9d01e;
+      }
+      .i9 {
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+  </body>
+    <div class="grid-container">
+      <div class="grid-items i1"></div>
+      <div class="grid-items i2"></div>
+      <div class="grid-items i3"></div>
+      <div class="grid-items i4"></div>
+      <div class="grid-items i5"></div>
+      <div class="grid-items i6"></div>
+      <div class="grid-items i7"></div>
+      <div class="grid-items i8"></div>
+      <div class="grid-items i9"></div>
+    </div>
+</html>

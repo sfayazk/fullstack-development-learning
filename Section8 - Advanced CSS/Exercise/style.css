@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+}
+
+.col{
+    background-color: blue;
+    width: 30%;
+    height: 500px;
+    margin: 10px;
+}
+/* .col1{
+    float: left;
+}
+.col3{
+    float: right;
+} */
